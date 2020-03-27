@@ -2,7 +2,7 @@ package ua.com.foxminded.anagrams;
 
 import java.util.Stack;
 
-public class Reverse {
+public class Anagram {
 
 	public static String reverseOnlyLetters(String inputString) {
 		Stack<Character> lettersOnly = new Stack<Character>();

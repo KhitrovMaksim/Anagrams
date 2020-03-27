@@ -9,7 +9,7 @@ public class ReverseTest {
 	@Test
 	public void test() {
 		
-		assertEquals("o!!!lleH", Reverse.reverseOnlyLetters("H!!!ello"));
+		assertEquals("o!!!lleH", Anagram.reverseOnlyLetters("H!!!ello"));
 		
 	}
 

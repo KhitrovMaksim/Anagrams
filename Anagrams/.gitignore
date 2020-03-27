@@ -1,1 +1,7 @@
 /target/
+.classpath
+.gitignore
+.project
+.settings/
+bin/
+Anagrams.class

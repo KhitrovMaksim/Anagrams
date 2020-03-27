@@ -2,9 +2,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>Anagrams</groupId>
   <artifactId>Anagrams</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>${version-own}</version>
   <name>Anagrams</name>
   <description>Program to reverse only letters</description>
+  <properties>
+  	<version-own>0.0.1-SNAPSHOT</version-own>
+  </properties>
   <dependencies>
   	<dependency>
   		<groupId>junit</groupId>
@@ -13,4 +16,5 @@
   		<scope>test</scope>
   	</dependency>
   </dependencies>
+
 </project>

@@ -30,7 +30,7 @@ public class Anagram {
         return output.toString();
     }
 
-    public String reverseOnlyLetters(String inputString) {
+    public String reverseLetters(String inputString) {
         Stack<Character> reversedLetters = extractLetters(inputString);
         String outputString = composeString(inputString, reversedLetters);
 

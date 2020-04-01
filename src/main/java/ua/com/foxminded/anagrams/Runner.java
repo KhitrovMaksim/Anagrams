@@ -5,7 +5,7 @@ public class Runner {
     public static void main(String[] args) {
         Anagram reverse = new Anagram();
 
-        System.out.println(reverse.reverseOnlyLetters("H!!!ello"));
+        System.out.println(reverse.reverseLetters("H!!!ello"));
     }
 
 }

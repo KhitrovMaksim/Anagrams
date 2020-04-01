@@ -10,7 +10,7 @@ public class AnagramTest {
     public void test() {
         Anagram reverse = new Anagram();
 
-        assertEquals("o!!!lleH", reverse.reverseOnlyLetters("H!!!ello"));
+        assertEquals("o!!!lleH", reverse.reverseLetters("H!!!ello"));
     }
 
 }

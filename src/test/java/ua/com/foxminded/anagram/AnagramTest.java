@@ -1,8 +1,10 @@
-package ua.com.foxminded.anagrams;
+package ua.com.foxminded.anagram;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import ua.com.foxminded.anagram.Anagram;
 
 public class AnagramTest {
 

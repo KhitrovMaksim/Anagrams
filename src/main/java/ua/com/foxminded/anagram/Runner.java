@@ -1,4 +1,4 @@
-package ua.com.foxminded.anagrams;
+package ua.com.foxminded.anagram;
 
 public class Runner {
 

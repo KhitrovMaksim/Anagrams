@@ -1,6 +1,8 @@
 package ua.com.foxminded.anagram;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
@@ -11,10 +13,18 @@ public class AnagramTest {
     Anagram reverse = new Anagram();
 
     @Test
-    public void testShouldReverseLettrersOnly() {
-        String expectedString = "o!!!lleH";
-        String actualString = reverse.reverseLetters("H!!!ello");
-        assertEquals(expectedString, actualString, "should return the same strings");
+    public void testShouldReverseLettersOnly() {
+
+        assertAll(() -> assertThrows(NullPointerException.class, () -> {reverse.reverseLetters(null);}),
+                  () -> assertEquals("", reverse.reverseLetters("")),
+                  () -> assertEquals(" ", reverse.reverseLetters(" ")),
+                  () -> assertEquals("   ", reverse.reverseLetters("   ")),
+                  () -> assertEquals("world", reverse.reverseLetters("dlrow")),
+                  () -> assertEquals("HELLO", reverse.reverseLetters("OLLEH")),
+                  () -> assertEquals("HELLO world", reverse.reverseLetters("dlrow OLLEH")),
+                  () -> assertEquals("H!!!ello111_>", reverse.reverseLetters("o!!!lleH111_>")),
+                  () -> assertEquals("H!!!ello123_> world", reverse.reverseLetters("d!!!lrow123_> olleH")));
+
     }
 
 }

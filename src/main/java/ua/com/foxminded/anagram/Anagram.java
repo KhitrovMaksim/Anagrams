@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Anagram {
 
-    Stack<Character> extractLetters(String inputString) {
+    private Stack<Character> extractLetters(String inputString) {
         Stack<Character> reversedLetters = new Stack<Character>();
 
         for (char symbol : inputString.toCharArray()) {
@@ -16,7 +16,7 @@ public class Anagram {
         return reversedLetters;
     }
 
-    String composeString(String inputString, Stack<Character> reversedLetters) {
+    private String composeString(String inputString, Stack<Character> reversedLetters) {
         StringBuilder output = new StringBuilder();
 
         for (char symbol : inputString.toCharArray()) {

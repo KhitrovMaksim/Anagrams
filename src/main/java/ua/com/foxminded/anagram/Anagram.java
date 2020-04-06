@@ -31,15 +31,13 @@ public class Anagram {
     }
 
     public String reverseLetters(String inputString) {
-        
+
         if (inputString == null) {
             throw new IllegalArgumentException("Inputs data cannot be null.");
         }
-        
+
         Stack<Character> reversedLetters = extractLetters(inputString);
         String outputString = composeString(inputString, reversedLetters);
-        
-        
 
         return outputString;
     }

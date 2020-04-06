@@ -15,7 +15,7 @@ public class AnagramTest {
     @Test
     public void testShouldReverseLettersOnly() {
 
-        assertAll(() -> assertThrows(NullPointerException.class, () -> {reverse.reverseLetters(null);}),
+        assertAll(() -> assertThrows(IllegalArgumentException.class, () -> {reverse.reverseLetters(null);}),
                   () -> assertEquals("", reverse.reverseLetters("")),
                   () -> assertEquals(" ", reverse.reverseLetters(" ")),
                   () -> assertEquals("   ", reverse.reverseLetters("   ")),
